@@ -23,3 +23,9 @@ def extract_total_player_data(response):
     data = soup.find('p')
     data = pd.DataFrame(data, columns=['player_count'])
     return data
+
+
+def extract_data(response)
+    world_data = extract_world_data(response)
+    total_player_data = extract_total_player_data(response)
+    return world_data, total_player_data 
