@@ -63,7 +63,7 @@ def get_total_player_count(data):
 
 
 def get_numbers(data):
-    columns = ['world', 'players']
+    columns = ['world', 'player_count']
     pattern = re.compile(r'\d+')
     for column in columns:
         data[column] = data[column].apply(lambda s: get_match(pattern, s))
@@ -104,7 +104,7 @@ def transform_data(world_data, total_player_count, dt):
         dt=dt, 
         columns=['datetime', 'world', 'player_count']
     )
-    transformed_total_player_count = transform_total_player_data(
+    transformed_total_player_count = transform_total_player_count(
         total_player_count,
         dt
     )
