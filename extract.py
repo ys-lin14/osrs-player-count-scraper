@@ -25,7 +25,7 @@ def extract_total_player_data(response):
     return data
 
 
-def extract_data(response)
+def extract_data(response):
     world_data = extract_world_data(response)
     total_player_data = extract_total_player_data(response)
     return world_data, total_player_data 
