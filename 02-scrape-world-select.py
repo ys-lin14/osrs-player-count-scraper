@@ -1,4 +1,6 @@
-import datetime
+import pandas as pd
+
+from datetime import datetime
 
 from log import check_last_request, update_logs
 from extract import get_osrs_world_select, extract_data
