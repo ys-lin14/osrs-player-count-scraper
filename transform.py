@@ -15,7 +15,7 @@ def select(data, columns):
 
 
 def rename_columns(data):
-    columns = ['world', 'players', 'location', 'type', 'activity']
+    columns = ['world', 'player_count', 'location', 'type', 'activity']
     new_columns = dict(zip(data.columns, columns))
     renamed_data = data.rename(columns=new_columns)
     return renamed_data
@@ -88,7 +88,7 @@ def transform_world_data(data, dt, columns):
     return transformed_data
 
 
-def transform_total_player_data(data, dt):
+def transform_total_player_count(data, dt):
     data = data.copy()
     transformed_data = (
         data.pipe(get_total_player_count)
@@ -96,3 +96,17 @@ def transform_total_player_data(data, dt):
             .pipe(select, columns=['datetime', 'player_count'])
     )
     return transformed_data
+
+
+def transform_data(world_data, total_player_count, dt):
+    transformed_world_data = transform_world_data(
+        world_data, 
+        dt=dt, 
+        columns=['datetime', 'world', 'player_count']
+    )
+    transformed_total_player_count = transform_total_player_data(
+        total_player_count,
+        dt
+    )
+    return transformed_world_data, transformed_total_player_count
+    
