@@ -3,20 +3,19 @@
 **Context**
 
 
-
-
 **Results**
 
     scraped player counts from [Old School RuneScape's world select](https://oldschool.runescape.com/slu) using an Python etl pipeline
     automated using Raspberry Pi 4 Model B and cron
 
-**World Info**
+**World Player Counts**
 
-| world |   location    | type |     activity    |
-|  :-:  |      :-:      |  :-: |       :-:       |
-|  168  | United States | Free | 500 skill total |
-|  117  | United States | Free |        -        |
-|  172  | United States | Free |        -        |
+![World Player Counts](https://github.com/ys-lin14/scrape-osrs-player-counts/blob/main/screenshots/world_player_counts.png?raw=true)
+
+
+**Total Player Counts**
+
+![Total Player Counts](https://github.com/ys-lin14/scrape-osrs-player-counts/blob/main/screenshots/total_player_counts.png?raw=true)
 
 
 **References**
