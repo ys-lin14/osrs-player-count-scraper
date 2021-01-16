@@ -6,7 +6,7 @@ I wanted to build upon my web scraping experience from a group project for schoo
 
 
 **Results** <br>
-Created an ETL pipeline / web scraper to scrape player counts from [Old School RuneScape's world select](https://oldschool.runescape.com/slu) and store them into a MySQL database using Python and automated it using a Raspberry Pi 4 Model B and cron.
+Created an ETL pipeline / web scraper to scrape and store player counts from [Old School RuneScape's world select](https://oldschool.runescape.com/slu) into a MySQL database using Python and automated it using a Raspberry Pi 4 Model B and cron.
 <br><br>
 
 
