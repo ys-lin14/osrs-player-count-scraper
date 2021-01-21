@@ -13,5 +13,5 @@ CREATE TABLE total_player_counts (
 CREATE TABLE world_player_counts (
     `datetime` DATETIME,
 	world SMALLINT UNSIGNED NOT NULL,
-    player_count MEDIUMINT UNSIGNED NOT NULL
+    player_count MEDIUMINT UNSIGNED
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
