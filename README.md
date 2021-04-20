@@ -1,7 +1,7 @@
 # Scrape-OSRS-Player-Counts
 
 **Context**<br>
-I wanted to build upon my web scraping experience from a group project for school (CMPT 353) while obtaining time series data that can be analyzed and used to create dashboards.
+I wanted to build upon my web scraping experience while obtaining time series data that can be analyzed and used to create dashboards.
 <br><br>
 
 
