@@ -1,4 +1,4 @@
-# Scrape-OSRS-Player-Counts
+# OSRS-Player-Count-Scraper
 
 **Context**<br>
 I wanted to build upon my web scraping experience while obtaining time series data that can be analyzed and used to create dashboards.
